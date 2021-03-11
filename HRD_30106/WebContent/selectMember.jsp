@@ -9,7 +9,7 @@
 	%>
 	<center>
 		<h1>회원목록조회/수정</h1>
-		<table>
+		<table border=1 style="text-align:center">
 			<thead>
 				<tr>
 					<td>회원번호</td>
@@ -27,7 +27,7 @@
 						
 				%>
 				<tr>
-					<td><%=dto.getCustno() %></td>
+					<td><a href="updateMember.jsp?custno=<%= dto.getCustno() %>"><%=dto.getCustno() %></a></td>
 					<td><%=dto.getCustname() %></td>
 					<td><%=dto.getPhone() %></td>
 					<td><%=dto.getAddress() %></td>

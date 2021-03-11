@@ -26,8 +26,6 @@ CREATE TABLE money_tbl_02(
 	CONSTRAINT PK_DUAL PRIMARY KEY(custno, salenol)
 );
 
-drop table money_tbl_02;
-
 INSERT INTO money_tbl_02 VALUES(100001, 20160001, 500, 5, 2500, 'A001', to_date('20160101'));
 INSERT INTO money_tbl_02 VALUES(100001, 20160002, 1000, 4, 4000, 'A002', to_date('20160101'));
 INSERT INTO money_tbl_02 VALUES(100001, 20160003, 500, 3, 1500, 'A008', to_date('20160101'));
@@ -40,3 +38,8 @@ INSERT INTO money_tbl_02 VALUES(100004, 20160009, 600, 1, 600, 'A006', to_date('
 INSERT INTO money_tbl_02 VALUES(100004, 20160010, 3000, 1, 3000, 'A007', to_date('20160106'));
 
 commit;
+
+SELECT * FROM member_tbl_02;
+
+SELECT custno, custname, phone, address, to_char(joindate, 'YYYY"년" MONTH DD"일"') as joindate, case grade when 'A' then 'VIP' when 'B' then '일반' when 'C' then '직원' end as grade, case city when '01' then '서울' when '10' then '인천' when '20' then'성남' when '30' then '대전' when '40' then '광주' when '60' then '부산' end as city FROM member_tbl_02;
+

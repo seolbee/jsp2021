@@ -10,6 +10,7 @@ public class MemberDTO {
 	private String joindate;
 	private String grade;
 	private String city;
+	
 	public int getCustno() {
 		return custno;
 	}
