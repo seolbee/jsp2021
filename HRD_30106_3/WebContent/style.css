@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+header{
+	text-align: center;
+	padding: 10px 0;
+}
+
+header > h1{
+	padding: 5px 0;
+}
+
+nav{
+	background-color: black;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px 0;
+}
+
+nav > a{
+	color: white;
+}
+
+#main{
+	width: 90%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0, .5);
+	margin: 0 auto;
+	min-height: 60vh;
+	padding: 20px 30px;
+}
+
+#main > h1{
+	padding: 5px 0;
+}
+
+#main > p{
+	padding: 5px 0;
+}
+
+footer{
+	text-align: center;
+	padding: 20px 0;
+	border: 1px solid #000;
+	border-left: none;
+	border-right: none;
+	margin-top: 30px;
+}
+
+.input_box{
+	margin: 20px 0;
+}
+
+.input_box > label{
+	display: block;
+	width: 100%;
+	margin: 5px 0;
+}
+
+.input_box > input{
+	width: 100%;
+	display: block;
+	border: 1px solid #000;
+	padding: 8px;
+	font-size: 16px;
+	border-radius: 3px;
+}
+
+select{
+	width: 20%;
+	border: 1px solid #000;
+	font-size: 16px;
+	padding: 6px;
+	border-radius : 3px;
+}
+
+button{
+	background-color: black;
+	color: white;
+	padding: 10px 13px;
+	border: none;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+table > thead > tr > td{
+	font-weight: bold;
+	font-size: 16px;
+}
+
+table > * > tr > td{
+	padding: 10px;
+}
+
+table > * > tr{
+	border-bottom: 1px solid #eee;
+}
+
+td > a{
+	background-color: black;
+	color: white;
+	padding: 2px 3px;
+}
