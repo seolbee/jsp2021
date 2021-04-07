@@ -1,31 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<header>
-		<h1>ÀÎ»ç°ü¸®½Ã½ºÅÛ</h1>
+		<h1>ì¸ì‚¬ê´€ë¦¬ì‹œìŠ¤í…œ</h1>
 	</header>
 	<fieldset>
-		<legend>ÀÎ»ç°ü¸® Á¶È¸</legend>
-		<form action="selectListEmployee.jsp">
-			<input type="radio" name="type" value="0"> »ç¿ø¹øÈ£·Î Á¶È¸
-			<input type="text" name="empname">
+		<legend>ì¸ì‚¬ê´€ë¦¬ ì¡°íšŒ</legend>
+		<form action="selectListEmployee.jsp" method="post">
+			<input type="radio" name="type" value="empno"> ì‚¬ì›ë²ˆí˜¸ë¡œ ì¡°íšŒ
+			<input type="text" name="empno">
 			<br><br>
-			<input type="radio" name="type" value="1"> ºÎ¼­¸íÀ¸·Î Á¶È¸
+			<input type="radio" name="type" value="dept"> ë¶€ì„œëª…ìœ¼ë¡œ ì¡°íšŒ
 			<select name="dept">
-				<option value="ÀÎ»çºÎ">ÀÎ»çºÎ</option>
-				<option value="±âÈ¹ºÎ">±âÈ¹ºÎ</option>
-				<option value="È«º¸ºÎ">È«º¸ºÎ</option>
-				<option value="¿µ¾÷ºÎ">¿µ¾÷ºÎ</option>
-				<option value="°æ¸®ºÎ">°æ¸®ºÎ</option>
+				<option value="ì¸ì‚¬ë¶€">ì¸ì‚¬ë¶€</option>
+				<option value="ê¸°íšë¶€">ê¸°íšë¶€</option>
+				<option value="í™ë³´ë¶€">í™ë³´ë¶€</option>
+				<option value="ì˜ì—…ë¶€">ì˜ì—…ë¶€</option>
+				<option value="ê²½ë¦¬ë¶€">ê²½ë¦¬ë¶€</option>
 			</select>
-			<button>Á¶È¸</button>
-			<button onclick="location.href='index.jsp'">Ãë¼Ò</button>
+			<br><br>
+			<button>ì¡°íšŒ</button>
+			<button type="button" onclick="location.href='index.jsp'">ì·¨ì†Œ</button>
 		</form>
 	</fieldset>
 </body>

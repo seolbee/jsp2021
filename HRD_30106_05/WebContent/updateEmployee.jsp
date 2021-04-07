@@ -26,6 +26,7 @@
 				<td>부서이름</td>
 				<td>전화번호</td>
 				<td>직급</td>
+				<td>비고</td>
 			</tr>
 		</thead>
 		<tbody>
@@ -37,6 +38,7 @@
 					<td><%=vo.getDept() %></td>
 					<td><%=vo.getPhone() %></td>
 					<td><%=vo.getDuty() %></td>
+					<td><a href="updateEmployee.jsp?empno=<%=vo.getEmpno() %>">수정</a></td>
 				</tr>
 			<% } %>
 		</tbody>

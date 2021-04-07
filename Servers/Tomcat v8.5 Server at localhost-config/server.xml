@@ -68,7 +68,7 @@
                connectionTimeout="20000"
                redirectPort="8443" />
     -->
-    <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443
+    <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443
          This connector uses the NIO implementation. The default
          SSLImplementation will depend on the presence of the APR/native
          library and the useOpenSSL attribute of the
@@ -85,7 +85,7 @@
         </SSLHostConfig>
     </Connector>
     -->
-    <!-- Define an SSL/TLS HTTP/1.1 Connector on port 8443 with HTTP/2
+    <!-- Define a SSL/TLS HTTP/1.1 Connector on port 8443 with HTTP/2
          This connector uses the APR/native implementation which always uses
          OpenSSL for TLS.
          Either JSSE or OpenSSL style configuration may be used. OpenSSL style
@@ -105,12 +105,8 @@
     -->
 
     <!-- Define an AJP 1.3 Connector on port 8009 -->
-    <!--
-    <Connector protocol="AJP/1.3"
-               address="::1"
-               port="8009"
-               redirectPort="8443" />
-    -->
+    <Connector port="8009" protocol="AJP/1.3" redirectPort="8443"/>
+
 
     <!-- An Engine represents the entry point (within Catalina) that processes
          every request.  The Engine implementation for Tomcat stand alone
@@ -153,7 +149,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="HRD_30106_04" path="/HRD_30106_04" reloadable="true" source="org.eclipse.jst.jee.server:HRD_30106_04"/></Host>
+      <Context docBase="HRD_30106_05" path="/HRD_30106_05" reloadable="true" source="org.eclipse.jst.jee.server:HRD_30106_05"/></Host>
     </Engine>
   </Service>
 </Server>

@@ -6,6 +6,7 @@ public class EmployeeVO {
 	private String duty;
 	private String phone;
 	private String dept;
+	private String position;
 	public String getEmpname() {
 		return empname;
 	}
@@ -35,6 +36,12 @@ public class EmployeeVO {
 	}
 	public void setDept(String dept) {
 		this.dept = dept;
+	}
+	public String getPosition() {
+		return position;
+	}
+	public void setPosition(String position) {
+		this.position = position;
 	}
 	
 	

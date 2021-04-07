@@ -1,22 +1,22 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
 	<header>
-		<h1>ÀÎ»ç°ü¸®½Ã½ºÅÛ</h1>
+		<h1>ì¸ì‚¬ê´€ë¦¬ì‹œìŠ¤í…œ</h1>
 	</header>
 	<fieldset>
-		<legend>ÀÎ»ç°ü¸® ¸ÞÀÎ¸Þ´º</legend>
-		<button onclick="location.href='selectEmployee.jsp'">Á¶È¸</button>
-		<button onclick="location.href='insertEmployee.jsp'">»ç¿øµî·Ï</button>
-		<button onclick="location.href='updateEmployee.jsp'">Á¤º¸º¯°æ</button>
-		<button onclick="location.href='deleteEmployee.jsp'">Åð»çÃ³¸®</button>
-		<button onclick="window.close()">Á¾·á</button>
+		<legend>ì¸ì‚¬ê´€ë¦¬ ë©”ì¸ë©”ë‰´</legend>
+		<button onclick="location.href='selectEmployee.jsp'">ì¡°íšŒ</button>
+		<button onclick="location.href='insertEmployee.jsp'">ì‚¬ì›ë“±ë¡</button>
+		<button onclick="location.href='updateEmployee.jsp'">ì •ë³´ë³€ê²½</button>
+		<button onclick="location.href='deleteEmployee.jsp'">í‡´ì‚¬ì²˜ë¦¬</button>
+		<button onclick="window.close()">ì¢…ë£Œ</button>
 	</fieldset>
 </body>
 </html>
