@@ -10,6 +10,7 @@
 	<header>
 		<h1>인사관리시스템</h1>
 	</header>
+	<hr>
 	<fieldset>
 		<legend>인사관리 메인메뉴</legend>
 		<button onclick="location.href='selectEmployee.jsp'">조회</button>

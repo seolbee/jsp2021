@@ -90,16 +90,18 @@ public class EmployeeDAO {
 		return update;
 	}
 	
-	public boolean delete(String empno) {
+	public boolean delete(String empno, String empname) {
 		boolean delete = false;
-		String sql = "DELETE FROM personnel WHERE empno = ?";
+		String sql = "DELETE FROM personnel WHERE empno = ? AND empname = ?";
 		Connection con = null;
 		PreparedStatement pstmt = null;
 		try {
 			con = Util.DBUtil.getConnection();
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, empno);
+			pstmt.setString(2, empname);
 			int cnt = pstmt.executeUpdate();
+			delete = cnt > 0;
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {

@@ -7,7 +7,6 @@
 	request.setCharacterEncoding("UTF-8");
 	String type = request.getParameter("type");
 	String value = request.getParameter(type);
-	System.out.println(type + ", " + value);
 	ArrayList<EmployeeVO> list = dao.getEmployeeList(type, value);
 %>
 <!DOCTYPE html>
@@ -33,7 +32,7 @@
 				<tr>
 					<td><%=vo.getEmpno() %></td>
 					<td><%=vo.getEmpname() %></td>
-					<td><%=vo.getPosition() %>급</td>
+					<td><%=vo.getPosition() %></td>
 					<td><%=vo.getDept() %></td>
 					<td><%=vo.getPhone() %></td>
 					<td><%=vo.getDuty() %></td>

@@ -7,6 +7,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<header>
+		<h1>인사관리 사원등록화면</h1>
+	</header>
+	<hr>
 	<fieldset>
 		<legend>사원 등록</legend>
 		<form action="insertEmployeePro.jsp" method="post">
@@ -32,7 +36,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>급</td>
+					<td>직 급</td>
 					<td>
 						<select name="position">
 							<option value="1">1급</option>
@@ -43,7 +47,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>직급</td>
+					<td>직 책</td>
 					<td><input type="text" name="duty"/></td>
 				</tr>
 				<tr>
